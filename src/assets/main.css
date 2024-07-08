@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  background-image: url('/images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'VT323', monospace;
+  height: 100%;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #131212,
+      1px -1px 0 #131212,
+      -1px 1px 0 #131212,
+      -1px -1px 0 #131212,
+      1px 0px 0 #131212,
+      0px 1px 0 #131212,
+      -1px 0px 0 #131212,
+      0px -1px 0 #131212;
+  --c: #7deaf9;
+}
+
+a {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 3rem;
+  color: #EEEEEE;
+  background: 
+    conic-gradient(from -135deg at 100%  50%,#5ae2f4  90deg,#5ae2f4 0) 0    var(--p,0%),
+    conic-gradient(from -135deg at 1.2em 50%,#5ae2f4 90deg,#5ae2f4  0) 100% var(--p,0%),
+    var(--c);
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: var(--s, 0%) 200%;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: .4s ease-in, background-position 0s;
+  padding: 5px;
+}
+a:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background: 
+    conic-gradient(from -135deg at 100%  50%,var(--c) 90deg,#8deaf7 0) 0    var(--p,0%),
+    conic-gradient(from -135deg at 1.2em 50%,#79edfd 90deg,var(--c) 0) 100% var(--p,0%);
+  background-size: inherit;
+  background-repeat: no-repeat;
+}
+a:hover {
+  --p: 100%;
+   /* it should be .6em (1.2em/2) but we use a litte bigger to avoid gaps */
+  --s: calc(50% + .61em);
+}
+
+.cart {
+  position: fixed;
+  right: 5vw;
+  top: 20vh;
+  background-color: #37306B;
+  box-shadow:   -5px 0 0 0 #048192,
+  5px 0 0 0 #048192,
+  0 -5px 0 0 #048192,
+  0 5px 0 0 #048192,
+  inset -4px 2px 1px 1px #7db3ba,
+  inset -4px -2px 1px 1px #adf0f9,
+  inset 4px 0px 1px 1px  #adf0f9; 
+}
+
+.dark-mode-btn {
+  position: fixed;
+  left: 5vw;
+  background-color: #06a6bc;
+  top: 20vh;
+  box-shadow:   -5px 0 0 0 #048192,
+  5px 0 0 0 #048192,
+  0 -5px 0 0 #048192,
+  0 5px 0 0 #048192,
+  inset -4px 2px 1px 1px #7db3ba,
+  inset -4px -2px 1px 1px #adf0f9,
+  inset 4px 0px 1px 1px  #adf0f9; 
+  padding: 5px;
+}
+
+div .box { 
+  background-color: #6ae7f7;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 5rem auto;
+  box-shadow:   -10px 0 0 0 #048192,
+  10px 0 0 0 #048192,
+  0 -10px 0 0 #048192,
+  0 10px 0 0 #048192,
+  inset -4px 2px 1px 1px #7db3ba,
+  inset -4px -2px 1px 1px #adf0f9,
+  inset 4px 0px 1px 1px #adf0f9; 
+  width: 50vw;
+}
+
+
+.div1 { 
+  grid-area: 1 / 1 / 2 / 2; 
+  text-align: start;
+}
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+
+h1 {
+      font-weight: bolder;
+      font-size: 7rem;
+      text-align: center;
+      text-shadow: 1px 0px 1px #000000,
+      0px 1px 1px #131212,
+      2px 1px 1px #000000,
+      1px 2px 1px #131212,
+      3px 2px 1px #000000,
+      2px 3px 1px #131212,
+      4px 3px 1px #000000,
+      3px 4px 1px #131212,
+      5px 4px 1px #000000,
+      4px 5px 1px #131212,
+      6px 5px 1px #000000,
+      5px 6px 1px #131212,
+      7px 6px 1px #000000;
+      color: #FFFFFF;
+}
+
+h2 { 
+  font-size: 5rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+p { 
+  line-height: 1.5rem;
+}
+
+p.menu { 
+  margin: 0.5em;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 10px;
+  align-items: center;
+  }
+
+  ul { 
+    list-style-type: none;
+  }
+  
+
