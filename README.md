@@ -2,7 +2,7 @@
 <img src="public\images\Mario.gif">
 <p>My name's Agata and i'm the author of this project. I did it for fun and to practise my vue.js skills so far :)
 I hope you enjoy it. 
-If you have some tips for me about what i should change to make it better you can send my an e-mail: <a href="mailto:agatajacyk.webdeveloper@gmail.com">agatajacyk.webdeveloper@gmail.com</a>
+If you have some tips for me about what i should change to make it better you can send me an e-mail: <a href="mailto:agatajacyk.webdeveloper@gmail.com">agatajacyk.webdeveloper@gmail.com</a>
 Let me know what you think about my work! </p>
 
 <h3>Please do not copy my work without credentials.</h3>
